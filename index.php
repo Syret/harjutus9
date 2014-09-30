@@ -58,6 +58,21 @@
         echo "<li>{$result[0]}</li>";
         echo "<li>{$result[1]}</li>";
 ?></ul>
+<ol>
+ <?php
+    function calc($nr1, $nr2) {
+        $plus = $nr1 + $nr2;
+        $minus = $nr1 - $nr2;
+
+        return array($plus, $minus);
+    }
+
+    list($plus, $minus) = array(100, 50);
+    echo "<li>Numbrite summa on {$plus}</li>";
+  echo "<li>Numbrite vahe on {$minus}</li>";
+    
+?>
+  </ol>
         
 </body>
 </html>
